@@ -50,8 +50,6 @@
     NSMutableDictionary *additionalInfo = [[NSMutableDictionary alloc] init];
     [additionalInfo setDictionary:currentContact.additionalInfo];
     
-//    NSMutableDictionary *additionalInfo1 = (NSMutableDictionary*)[currentContact.additionalInfo copy];
-    
     NSInteger index = 0;
     for (HSFCheckBox *checkbox in _checkboxes) {
         UILabel * label = [_infoLabels objectAtIndex:index];
@@ -77,6 +75,22 @@
         [_errorLbl setHidden:NO];
     }
     return isVerified;
+}
+
+- (void)populateLabels
+{
+    // Do any additional setup after loading the view.
+    [_infoLabel1 setText:kLabel1];
+    [_infoLabel2 setText:kLabel2];
+    [_infoLabel3 setText:kLabel3];
+    [_infoLabel4 setText:kLabel4];
+    [_infoLabel5 setText:kLabel5];
+    [_infoLabel6 setText:kLabel6];
+    [_infoLabel7 setText:kLabel7];
+    [_infoLabel8 setText:kLabel8];
+    [_infoLabel9 setText:kLabel9];
+    [_infoLabel10 setText:kLabel10];
+    [_infoLabel11 setText:kLabel11];
 }
 
 

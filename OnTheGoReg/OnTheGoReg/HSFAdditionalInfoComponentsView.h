@@ -13,6 +13,8 @@
 @interface HSFAdditionalInfoComponentsView : UIView
 
 - (BOOL)populateWithCheckboxes;
+// Must be done after view loads
+- (void)populateLabels;
 
 // Info Labels
 @property (strong, nonatomic) IBOutlet UILabel *infoLabel1;

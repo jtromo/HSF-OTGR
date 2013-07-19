@@ -10,6 +10,7 @@
 #import "UIViewController+Extensions.h"
 #import "HSFNetManager.h"
 #import "HSFContact.h"
+#import "HSFAdditionalInfoComponentsView.h"
 
 @interface HSFContactViewController ()
 
@@ -24,22 +25,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *emailField;
 @property (strong, nonatomic) IBOutlet UITextField *phoneField;
 
-
 // iPad Only
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel1;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel2;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel3;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel4;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel5;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel6;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel7;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel8;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel9;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel10;
-@property (strong, nonatomic) IBOutlet UILabel *infoLabel11;
+@property (nonatomic, strong) IBOutlet HSFAdditionalInfoComponentsView *additionalInfoView;
 
-
-@property (strong, nonatomic) IBOutlet UILabel *errorLbl;
 
 @end
 
@@ -61,6 +49,11 @@
     [_contactTypeField setInputView:contactTypePicker];
     NSString * defaultContactType = [_contactTypes objectAtIndex:0];
     _contactTypeField.text = defaultContactType;
+    
+    
+    if (!IS_PHONE) {
+        [_additionalInfoView populateLabels];
+    }
     
     
 //    [crimeTypePicker selectRow:crimeTypeId inComponent:0 animated:YES];
@@ -395,6 +388,9 @@
     }
     
     // Only ipad
+    if (!IS_PHONE) {
+        isVerified = [self.additionalInfoView populateWithCheckboxes];
+    }
     
     
     return isVerified;

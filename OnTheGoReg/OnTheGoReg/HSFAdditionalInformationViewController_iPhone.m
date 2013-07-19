@@ -33,18 +33,7 @@
 {
     [super viewDidLoad];
     
-	// Do any additional setup after loading the view.
-    [_additionalInfoView.infoLabel1 setText:kLabel1];
-    [_additionalInfoView.infoLabel2 setText:kLabel2];
-    [_additionalInfoView.infoLabel3 setText:kLabel3];
-    [_additionalInfoView.infoLabel4 setText:kLabel4];
-    [_additionalInfoView.infoLabel5 setText:kLabel5];
-    [_additionalInfoView.infoLabel6 setText:kLabel6];
-    [_additionalInfoView.infoLabel7 setText:kLabel7];
-    [_additionalInfoView.infoLabel8 setText:kLabel8];
-    [_additionalInfoView.infoLabel9 setText:kLabel9];
-    [_additionalInfoView.infoLabel10 setText:kLabel10];
-    [_additionalInfoView.infoLabel11 setText:kLabel11];
+	[_additionalInfoView populateLabels];
 }
 
 - (void)didReceiveMemoryWarning
