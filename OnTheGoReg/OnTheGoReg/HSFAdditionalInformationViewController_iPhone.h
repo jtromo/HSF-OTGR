@@ -1,5 +1,5 @@
 //
-//  HSFViewController.h
+//  HSFAdditionalInformationViewController_iPhone.h
 //  OnTheGoReg
 //
 //  Created by James T Romo on 7/19/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSFContactViewController_iPhone : UIViewController
+@interface HSFAdditionalInformationViewController_iPhone : UIViewController
 
 @end

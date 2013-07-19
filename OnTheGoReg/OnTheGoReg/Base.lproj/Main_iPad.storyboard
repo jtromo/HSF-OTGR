@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-961" y="-179"/>
         </scene>
-        <!--Contact View Controller i Phone-->
+        <!--Contact View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HSFContactViewController_iPhone" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HSFContactViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oZs-mZ-9Se"/>
                         <viewControllerLayoutGuide type="bottom" id="YJV-tN-8em"/>

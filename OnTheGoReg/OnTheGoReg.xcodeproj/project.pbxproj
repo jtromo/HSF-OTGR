@@ -15,7 +15,7 @@
 		08554AB3179990D4009AFE5E /* HSFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08554AB2179990D4009AFE5E /* HSFAppDelegate.m */; };
 		08554AB6179990D4009AFE5E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */; };
 		08554AB9179990D4009AFE5E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08554AB7179990D4009AFE5E /* Main_iPad.storyboard */; };
-		08554ABC179990D4009AFE5E /* HSFContactViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 08554ABB179990D4009AFE5E /* HSFContactViewController_iPhone.m */; };
+		08554ABC179990D4009AFE5E /* HSFContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08554ABB179990D4009AFE5E /* HSFContactViewController.m */; };
 		08554ABE179990D4009AFE5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08554ABD179990D4009AFE5E /* Images.xcassets */; };
 		08554AC5179990D4009AFE5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08554AC4179990D4009AFE5E /* XCTest.framework */; };
 		08554AC6179990D4009AFE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08554AA2179990D4009AFE5E /* Foundation.framework */; };
@@ -35,7 +35,12 @@
 		08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1A1799A93C009AFE5E /* BlackSample.png */; };
 		08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1D1799AA1F009AFE5E /* BlueSample.jpg */; };
 		08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1E1799AA1F009AFE5E /* GreenSample.jpg */; };
-		08554B231799AE5E009AFE5E /* HSFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08554B221799AE5E009AFE5E /* HSFNavigationController.m */; };
+		08627FFE1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 08627FFD1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m */; };
+		086280021799BFEE0018E575 /* HSFCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 086280011799BFEE0018E575 /* HSFCheckBox.m */; };
+		086280051799C2BD0018E575 /* HSFContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 086280041799C2BD0018E575 /* HSFContact.m */; };
+		086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 086280061799C5800018E575 /* CheckBoxUnchecked.png */; };
+		0862800A1799C7290018E575 /* HSFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 086280091799C7290018E575 /* HSFNetManager.m */; };
+		0862800D1799D1680018E575 /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0862800C1799D1680018E575 /* UIViewController+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +66,8 @@
 		08554AB2179990D4009AFE5E /* HSFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFAppDelegate.m; sourceTree = "<group>"; };
 		08554AB5179990D4009AFE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		08554AB8179990D4009AFE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		08554ABA179990D4009AFE5E /* HSFContactViewController_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSFContactViewController_iPhone.h; sourceTree = "<group>"; };
-		08554ABB179990D4009AFE5E /* HSFContactViewController_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFContactViewController_iPhone.m; sourceTree = "<group>"; };
+		08554ABA179990D4009AFE5E /* HSFContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSFContactViewController.h; sourceTree = "<group>"; };
+		08554ABB179990D4009AFE5E /* HSFContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSFContactViewController.m; sourceTree = "<group>"; };
 		08554ABD179990D4009AFE5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		08554AC3179990D4009AFE5E /* OnTheGoRegTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnTheGoRegTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08554AC4179990D4009AFE5E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,8 +96,17 @@
 		08554B1A1799A93C009AFE5E /* BlackSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackSample.png; sourceTree = "<group>"; };
 		08554B1D1799AA1F009AFE5E /* BlueSample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlueSample.jpg; sourceTree = "<group>"; };
 		08554B1E1799AA1F009AFE5E /* GreenSample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenSample.jpg; sourceTree = "<group>"; };
-		08554B211799AE5E009AFE5E /* HSFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFNavigationController.h; sourceTree = "<group>"; };
-		08554B221799AE5E009AFE5E /* HSFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFNavigationController.m; sourceTree = "<group>"; };
+		08627FFC1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFAdditionalInformationViewController_iPhone.h; sourceTree = "<group>"; };
+		08627FFD1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFAdditionalInformationViewController_iPhone.m; sourceTree = "<group>"; };
+		086280001799BFEE0018E575 /* HSFCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSFCheckBox.h; path = Utilities/UI/HSFCheckBox.h; sourceTree = "<group>"; };
+		086280011799BFEE0018E575 /* HSFCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSFCheckBox.m; path = Utilities/UI/HSFCheckBox.m; sourceTree = "<group>"; };
+		086280031799C2BD0018E575 /* HSFContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFContact.h; sourceTree = "<group>"; };
+		086280041799C2BD0018E575 /* HSFContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFContact.m; sourceTree = "<group>"; };
+		086280061799C5800018E575 /* CheckBoxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxUnchecked.png; sourceTree = "<group>"; };
+		086280081799C7290018E575 /* HSFNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFNetManager.h; sourceTree = "<group>"; };
+		086280091799C7290018E575 /* HSFNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFNetManager.m; sourceTree = "<group>"; };
+		0862800B1799D1680018E575 /* UIViewController+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Extensions.h"; path = "Utilities/UIViewController+Extensions.h"; sourceTree = "<group>"; };
+		0862800C1799D1680018E575 /* UIViewController+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Extensions.m"; path = "Utilities/UIViewController+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +177,19 @@
 			isa = PBXGroup;
 			children = (
 				08554B0817999654009AFE5E /* HSFInterface */,
-				08554B211799AE5E009AFE5E /* HSFNavigationController.h */,
-				08554B221799AE5E009AFE5E /* HSFNavigationController.m */,
 				08554AB1179990D4009AFE5E /* HSFAppDelegate.h */,
 				08554AB2179990D4009AFE5E /* HSFAppDelegate.m */,
 				08554B161799A473009AFE5E /* iPad Views */,
 				08554B151799A464009AFE5E /* iPhone Views */,
+				08554ABA179990D4009AFE5E /* HSFContactViewController.h */,
+				08554ABB179990D4009AFE5E /* HSFContactViewController.m */,
+				08627FFC1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.h */,
+				08627FFD1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m */,
+				086280031799C2BD0018E575 /* HSFContact.h */,
+				086280041799C2BD0018E575 /* HSFContact.m */,
+				086280081799C7290018E575 /* HSFNetManager.h */,
+				086280091799C7290018E575 /* HSFNetManager.m */,
+				08627FFF1799BFC00018E575 /* Utilities */,
 				08554ABD179990D4009AFE5E /* Images.xcassets */,
 				08554AA9179990D4009AFE5E /* Supporting Files */,
 			);
@@ -264,8 +285,6 @@
 			isa = PBXGroup;
 			children = (
 				08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */,
-				08554ABA179990D4009AFE5E /* HSFContactViewController_iPhone.h */,
-				08554ABB179990D4009AFE5E /* HSFContactViewController_iPhone.m */,
 			);
 			name = "iPhone Views";
 			sourceTree = "<group>";
@@ -289,11 +308,23 @@
 		08554B191799A93C009AFE5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				086280061799C5800018E575 /* CheckBoxUnchecked.png */,
 				08554B1D1799AA1F009AFE5E /* BlueSample.jpg */,
 				08554B1E1799AA1F009AFE5E /* GreenSample.jpg */,
 				08554B1A1799A93C009AFE5E /* BlackSample.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		08627FFF1799BFC00018E575 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0862800B1799D1680018E575 /* UIViewController+Extensions.h */,
+				0862800C1799D1680018E575 /* UIViewController+Extensions.m */,
+				086280001799BFEE0018E575 /* HSFCheckBox.h */,
+				086280011799BFEE0018E575 /* HSFCheckBox.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +408,7 @@
 				08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */,
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
 				08554B1B1799A93C009AFE5E /* schema.sql in Resources */,
+				086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */,
 				08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */,
 				08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */,
 				08554AB6179990D4009AFE5E /* Main_iPhone.storyboard in Resources */,
@@ -402,13 +434,17 @@
 				08554AB3179990D4009AFE5E /* HSFAppDelegate.m in Sources */,
 				08554AFE17999598009AFE5E /* FMDatabasePool.m in Sources */,
 				08554AAF179990D4009AFE5E /* main.m in Sources */,
+				08627FFE1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m in Sources */,
+				086280021799BFEE0018E575 /* HSFCheckBox.m in Sources */,
 				08554AFF17999598009AFE5E /* FMDatabaseQueue.m in Sources */,
-				08554ABC179990D4009AFE5E /* HSFContactViewController_iPhone.m in Sources */,
+				08554ABC179990D4009AFE5E /* HSFContactViewController.m in Sources */,
 				08554AFC17999598009AFE5E /* FMDatabase.m in Sources */,
+				086280051799C2BD0018E575 /* HSFContact.m in Sources */,
 				08554B0017999598009AFE5E /* FMResultSet.m in Sources */,
+				0862800D1799D1680018E575 /* UIViewController+Extensions.m in Sources */,
+				0862800A1799C7290018E575 /* HSFNetManager.m in Sources */,
 				08554B0E17999698009AFE5E /* Reachability.m in Sources */,
 				08554AFD17999598009AFE5E /* FMDatabaseAdditions.m in Sources */,
-				08554B231799AE5E009AFE5E /* HSFNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +657,7 @@
 				08554AD6179990D4009AFE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08554AD7179990D4009AFE5E /* Build configuration list for PBXNativeTarget "OnTheGoRegTests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +666,7 @@
 				08554AD9179990D4009AFE5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
