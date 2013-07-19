@@ -9,6 +9,6 @@
 #ifndef OnTheGoReg_HSFDefinitions_h
 #define OnTheGoReg_HSFDefinitions_h
 
-
+#define IS_PHONE  UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone
 
 #endif

@@ -14,4 +14,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "Logging.h"
+    #import "HSFDefinitions.h"
+    #import "HSFControls.h"
 #endif

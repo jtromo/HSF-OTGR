@@ -35,6 +35,7 @@
 		08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1A1799A93C009AFE5E /* BlackSample.png */; };
 		08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1D1799AA1F009AFE5E /* BlueSample.jpg */; };
 		08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08554B1E1799AA1F009AFE5E /* GreenSample.jpg */; };
+		08554B231799AE5E009AFE5E /* HSFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08554B221799AE5E009AFE5E /* HSFNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		08554B1A1799A93C009AFE5E /* BlackSample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackSample.png; sourceTree = "<group>"; };
 		08554B1D1799AA1F009AFE5E /* BlueSample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlueSample.jpg; sourceTree = "<group>"; };
 		08554B1E1799AA1F009AFE5E /* GreenSample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GreenSample.jpg; sourceTree = "<group>"; };
+		08554B211799AE5E009AFE5E /* HSFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFNavigationController.h; sourceTree = "<group>"; };
+		08554B221799AE5E009AFE5E /* HSFNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				08554B0817999654009AFE5E /* HSFInterface */,
+				08554B211799AE5E009AFE5E /* HSFNavigationController.h */,
+				08554B221799AE5E009AFE5E /* HSFNavigationController.m */,
 				08554AB1179990D4009AFE5E /* HSFAppDelegate.h */,
 				08554AB2179990D4009AFE5E /* HSFAppDelegate.m */,
 				08554B161799A473009AFE5E /* iPad Views */,
@@ -403,6 +408,7 @@
 				08554B0017999598009AFE5E /* FMResultSet.m in Sources */,
 				08554B0E17999698009AFE5E /* Reachability.m in Sources */,
 				08554AFD17999598009AFE5E /* FMDatabaseAdditions.m in Sources */,
+				08554B231799AE5E009AFE5E /* HSFNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
