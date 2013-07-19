@@ -8,12 +8,39 @@
 
 #import "HSFContactViewController.h"
 #import "UIViewController+Extensions.h"
+#import "HSFNetManager.h"
+#import "HSFContact.h"
 
 @interface HSFContactViewController ()
-@property (strong, nonatomic) IBOutlet UITextField *contactTypeTextField;
+
 @property (strong, nonatomic) NSArray *contactTypes;
 @property (strong, nonatomic) UITextField *activeField;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+// Shared Fields
+@property (strong, nonatomic) IBOutlet UITextField *firstNameField;
+@property (strong, nonatomic) IBOutlet UITextField *lastNameField;
+@property (strong, nonatomic) IBOutlet UITextField *contactTypeField;
+@property (strong, nonatomic) IBOutlet UITextField *emailField;
+@property (strong, nonatomic) IBOutlet UITextField *phoneField;
+
+
+// iPad Only
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel1;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel3;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel4;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel5;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel6;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel7;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel8;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel9;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel10;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel11;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *errorLbl;
+
 @end
 
 @implementation HSFContactViewController
@@ -31,9 +58,9 @@
     contactTypePicker.showsSelectionIndicator = YES;
     
     // Set keyboard to date picker
-    [_contactTypeTextField setInputView:contactTypePicker];
+    [_contactTypeField setInputView:contactTypePicker];
     NSString * defaultContactType = [_contactTypes objectAtIndex:0];
-    _contactTypeTextField.text = defaultContactType;
+    _contactTypeField.text = defaultContactType;
     
     
 //    [crimeTypePicker selectRow:crimeTypeId inComponent:0 animated:YES];
@@ -288,7 +315,7 @@
 {
     NSString * contactType = [_contactTypes objectAtIndex:row];
     
-    self.contactTypeTextField.text = contactType;
+    self.contactTypeField.text = contactType;
 }
 
 // tell the picker how many rows are available for a given component
@@ -320,11 +347,66 @@
     return sectionWidth;
 }
 
+//- (BOOL)verifyAtLeastOneChecked
+//{
+//    
+//}
 
+// Also verifies
+- (BOOL)populateContact
+{
+    BOOL isVerified = YES;
+    
+    HSFContact *currentContact = [[HSFNetManager sharedInstance] currentContact];
+    currentContact.firstName = _firstNameField.text;
+    if (!currentContact.firstName) {
+        _firstNameField.backgroundColor = [UIColor redColor];
+        isVerified = NO;
+    } else {
+        _firstNameField.backgroundColor = [UIColor whiteColor];
+    }
+    currentContact.lastName = _lastNameField.text;
+    if (!currentContact.lastName) {
+        _lastNameField.backgroundColor = [UIColor redColor];
+        isVerified = NO;
+    } else {
+        _lastNameField.backgroundColor = [UIColor whiteColor];
+    }
+    currentContact.email = _emailField.text;
+    if (!currentContact.email) {
+        _emailField.backgroundColor = [UIColor redColor];
+        isVerified = NO;
+    } else {
+        _emailField.backgroundColor = [UIColor whiteColor];
+    }
+    currentContact.contactType = _contactTypeField.text;
+    if (!currentContact.contactType) {
+        _contactTypeField.backgroundColor = [UIColor redColor];
+        isVerified = NO;
+    } else {
+        _contactTypeField.backgroundColor = [UIColor whiteColor];
+    }
+    currentContact.phoneNumber = _phoneField.text;
+    if (!currentContact.phoneNumber) {
+        _phoneField.backgroundColor = [UIColor redColor];
+        isVerified = NO;
+    } else {
+        _phoneField.backgroundColor = [UIColor whiteColor];
+    }
+    
+    // Only ipad
+    
+    
+    return isVerified;
+}
 
 - (IBAction)nextBtnPressed:(id)sender
 {
-    
+    if ([self populateContact]) {
+        [self performSegueWithIdentifier:@"Next" sender:self];
+    } else {
+        // Error message
+    }
 }
 
 

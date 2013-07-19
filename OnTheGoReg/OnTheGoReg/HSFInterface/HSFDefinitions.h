@@ -11,7 +11,7 @@
 
 #define IS_PHONE  UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone
 
-#define kCheckedState_Image @"GreenSample.jpg"
+#define kCheckedState_Image @"CheckBoxChecked.png"
 #define kUncheckedState_Image @"CheckBoxUnchecked.png"
 
 // Label Names

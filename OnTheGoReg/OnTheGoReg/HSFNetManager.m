@@ -30,6 +30,8 @@ static HSFNetManager * _sharedInstance;
         return nil;
     }
     
+    _currentContact = [[HSFContact alloc] init];
+    
     return self;
 }
 
