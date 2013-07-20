@@ -16,15 +16,15 @@
 
 // Label Names
 #define kLabel1 @"Scholarships"
-#define kLabel2 @"Newsletters"
-#define kLabel3 @"Resources"
-#define kLabel4 @"Volunteer Opportunities"
-#define kLabel5 @"Internships"
-#define kLabel6 @"Speaking Opportunities"
-#define kLabel7 @"Ambassador"
-#define kLabel8 @"Donations"
-#define kLabel9 @"Mentorship Opportunities - Mentor"
-#define kLabel10 @"Mentorship Opportunities - Mentee"
+#define kLabel2 @"Newsletter"
+#define kLabel3 @"Higher Ed Resources"
+#define kLabel4 @"Volunteering with HSF"
+#define kLabel5 @"Internship Opportunities"
+#define kLabel6 @"Speaking Engagements"
+#define kLabel7 @"Becoming an Ambassador"
+#define kLabel8 @"Donationing to HSF"
+#define kLabel9 @"Becoming a Mentor"
+#define kLabel10 @"Becoming a Mentee"
 #define kLabel11 @"Other"
 
 #define kAddtionalInfoDict @{kLabel1: @NO, kLabel2 : @NO, kLabel3 : @NO, kLabel4 : @NO, kLabel5 : @NO, kLabel6 : @NO, kLabel7 : @NO, kLabel8 : @NO, kLabel9 : @NO, kLabel10 : @NO, kLabel11 : @NO };

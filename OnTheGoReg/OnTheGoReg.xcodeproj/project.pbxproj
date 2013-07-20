@@ -43,6 +43,9 @@
 		0862800D1799D1680018E575 /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0862800C1799D1680018E575 /* UIViewController+Extensions.m */; };
 		0862800F1799D84F0018E575 /* CheckBoxChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0862800E1799D84F0018E575 /* CheckBoxChecked.png */; };
 		086280121799DF840018E575 /* HSFAdditionalInfoComponentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 086280111799DF840018E575 /* HSFAdditionalInfoComponentsView.m */; };
+		08D2ED8B1799F12300A9DB3C /* InstructionsBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */; };
+		08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8C179A01F400A9DB3C /* CameraButton.png */; };
+		08D2ED8F179A041000A9DB3C /* TitleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8E179A041000A9DB3C /* TitleBar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		0862800E1799D84F0018E575 /* CheckBoxChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxChecked.png; sourceTree = "<group>"; };
 		086280101799DF840018E575 /* HSFAdditionalInfoComponentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFAdditionalInfoComponentsView.h; sourceTree = "<group>"; };
 		086280111799DF840018E575 /* HSFAdditionalInfoComponentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFAdditionalInfoComponentsView.m; sourceTree = "<group>"; };
+		08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBar.png; sourceTree = "<group>"; };
+		08D2ED8C179A01F400A9DB3C /* CameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraButton.png; sourceTree = "<group>"; };
+		08D2ED8E179A041000A9DB3C /* TitleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +190,8 @@
 				08554B0817999654009AFE5E /* HSFInterface */,
 				08554AB1179990D4009AFE5E /* HSFAppDelegate.h */,
 				08554AB2179990D4009AFE5E /* HSFAppDelegate.m */,
-				08554B161799A473009AFE5E /* iPad Views */,
-				08554B151799A464009AFE5E /* iPhone Views */,
+				08554AB7179990D4009AFE5E /* Main_iPad.storyboard */,
+				08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */,
 				08554ABA179990D4009AFE5E /* HSFContactViewController.h */,
 				08554ABB179990D4009AFE5E /* HSFContactViewController.m */,
 				08627FFC1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.h */,
@@ -288,22 +294,6 @@
 			path = OnTheGoReg/Utilities/Reachability;
 			sourceTree = "<group>";
 		};
-		08554B151799A464009AFE5E /* iPhone Views */ = {
-			isa = PBXGroup;
-			children = (
-				08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */,
-			);
-			name = "iPhone Views";
-			sourceTree = "<group>";
-		};
-		08554B161799A473009AFE5E /* iPad Views */ = {
-			isa = PBXGroup;
-			children = (
-				08554AB7179990D4009AFE5E /* Main_iPad.storyboard */,
-			);
-			name = "iPad Views";
-			sourceTree = "<group>";
-		};
 		08554B171799A93C009AFE5E /* Databases */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +305,10 @@
 		08554B191799A93C009AFE5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				08D2ED8E179A041000A9DB3C /* TitleBar.png */,
+				08D2ED8C179A01F400A9DB3C /* CameraButton.png */,
 				086280061799C5800018E575 /* CheckBoxUnchecked.png */,
+				08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */,
 				08554B1D1799AA1F009AFE5E /* BlueSample.jpg */,
 				08554B1E1799AA1F009AFE5E /* GreenSample.jpg */,
 				0862800E1799D84F0018E575 /* CheckBoxChecked.png */,
@@ -412,15 +405,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */,
 				08554AB9179990D4009AFE5E /* Main_iPad.storyboard in Resources */,
 				08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */,
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
 				08554B1B1799A93C009AFE5E /* schema.sql in Resources */,
+				08D2ED8B1799F12300A9DB3C /* InstructionsBar.png in Resources */,
 				086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */,
 				08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */,
 				08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */,
 				08554AB6179990D4009AFE5E /* Main_iPhone.storyboard in Resources */,
 				0862800F1799D84F0018E575 /* CheckBoxChecked.png in Resources */,
+				08D2ED8F179A041000A9DB3C /* TitleBar.png in Resources */,
 				08554AAD179990D4009AFE5E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -405,7 +405,14 @@
     }
 }
 
-
+- (IBAction)submitBtnPressed:(id)sender
+{
+    if ([self populateContact]) {
+//        [self performSegueWithIdentifier:@"Next" sender:self];
+    } else {
+        // Error message
+    }
+}
 
 
 
