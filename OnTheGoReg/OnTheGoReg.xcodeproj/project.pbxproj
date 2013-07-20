@@ -72,7 +72,7 @@
 		08E63330179A767400174D4E /* libtesseract_all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E63320179A767400174D4E /* libtesseract_all.a */; };
 		08E63331179A767400174D4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 08E63321179A767400174D4E /* README.md */; };
 		08E63334179A77E200174D4E /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08E63333179A77E200174D4E /* image_sample.jpg */; };
-		08E63336179A7AF700174D4E /* Sample_Business_Card.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08E63335179A7AF700174D4E /* Sample_Business_Card.gif */; };
+		08E63338179A7D9300174D4E /* Sample_Business_Card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E63337179A7D9300174D4E /* Sample_Business_Card2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,7 +319,7 @@
 		08E63321179A767400174D4E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		08E63332179A76FF00174D4E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = OnTheGoReg/Utilities/tessdata; sourceTree = "<group>"; };
 		08E63333179A77E200174D4E /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
-		08E63335179A7AF700174D4E /* Sample_Business_Card.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sample_Business_Card.gif; sourceTree = "<group>"; };
+		08E63337179A7D9300174D4E /* Sample_Business_Card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample_Business_Card2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,7 +531,7 @@
 		08554B191799A93C009AFE5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				08E63335179A7AF700174D4E /* Sample_Business_Card.gif */,
+				08E63337179A7D9300174D4E /* Sample_Business_Card2.png */,
 				08E63333179A77E200174D4E /* image_sample.jpg */,
 				08E63191179A20F200174D4E /* TitleBariPad.png */,
 				08E63192179A20F200174D4E /* TitleBariPhone.png */,
@@ -872,6 +872,7 @@
 				08E63190179A1C2E00174D4E /* InstructionsBariPad.png in Resources */,
 				08E6332D179A767400174D4E /* README.md in Resources */,
 				08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */,
+				08E63338179A7D9300174D4E /* Sample_Business_Card2.png in Resources */,
 				08E63331179A767400174D4E /* README.md in Resources */,
 				08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */,
 				08D2ED95179A15D500A9DB3C /* SubmitButton.png in Resources */,
@@ -883,7 +884,6 @@
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
 				08554B1B1799A93C009AFE5E /* schema.sql in Resources */,
 				086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */,
-				08E63336179A7AF700174D4E /* Sample_Business_Card.gif in Resources */,
 				08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */,
 				08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */,
 				08E63334179A77E200174D4E /* image_sample.jpg in Resources */,

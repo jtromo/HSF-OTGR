@@ -98,10 +98,10 @@
     _tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
     
     
-    [_tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]];
-    [_tesseract recognize];
-    
-    NSLog(@"%@", [_tesseract recognizedText]);
+//    [_tesseract setImage:[UIImage imageNamed:@"Sample_Business_Card.gif"]];
+//    [_tesseract recognize];
+//    
+//    NSLog(@"%@", [_tesseract recognizedText]);
 }
 
 
@@ -504,22 +504,58 @@
 //    [self.navigationController pushViewController:resultsVC animated:YES];
 //    
 //}
+
+- (void)parseCard: (NSString *)myCardString
+{
+    NSArray *parsed = [myCardString componentsSeparatedByString:@"\n"];
+    // Line by line
+    int wordCount = 0;
+    for (NSString *line in parsed) {
+        NSArray *subParsed = [line componentsSeparatedByString:@" "];
+        // Word by word
+        for (NSString *word in subParsed) {
+            wordCount++;
+            if (wordCount == 2) {
+                _firstNameField.text = word;
+            }
+            else if (wordCount == 3) {
+                _lastNameField.text = word;
+            }
+            else if (wordCount == 5) {
+                _phoneField.text = word;
+            }
+            else if (wordCount == 7) {
+                _emailField.text = word;
+            }
+        }
+    }
+    
+    
+    NSLog(@"%@", [_tesseract recognizedText]);
+}
+
 - (IBAction)cameraButtonPressed:(id)sender
 {
-    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-    imagePickerController.delegate = self;
+    [_tesseract setImage:[UIImage imageNamed:@"Sample_Business_Card2.png"]];
+    [_tesseract recognize];
     
-    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-        imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
-    }
-    else {
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-    }
-    
-    [self presentViewController:imagePickerController
-                       animated:YES
-                     completion:nil];
+    NSString *businessCardText = [_tesseract recognizedText];
+    [self parseCard:businessCardText];
+//
+//    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+//    imagePickerController.delegate = self;
+//    
+//    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
+//        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+//        imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
+//    }
+//    else {
+//        imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+//    }
+//    
+//    [self presentViewController:imagePickerController
+//                       animated:YES
+//                     completion:nil];
 }
 
 
