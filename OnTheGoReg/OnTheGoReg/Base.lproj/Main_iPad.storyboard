@@ -71,19 +71,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GpW-iU-7y7">
-                                <rect key="frame" x="898" y="660" width="75" height="44"/>
+                                <rect key="frame" x="898" y="669" width="100" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="giZ-MC-9h1"/>
+                                    <constraint firstAttribute="height" constant="35" id="jmk-iw-N3b"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Submit">
-                                            <attributes>
-                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" backgroundImage="SubmitButton.png">
+                                    <attributedString key="attributedTitle"/>
                                     <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -515,16 +511,15 @@
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="top" secondItem="Sz9-6Y-mMG" secondAttribute="bottom" constant="47" id="IVB-se-DE6"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="trailing" secondItem="hMt-B8-Q6x" secondAttribute="trailing" id="Izd-Qg-yU3"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="top" secondItem="ZCN-UP-7po" secondAttribute="bottom" constant="8" symbolic="YES" id="KpQ-5R-YR4"/>
-                            <constraint firstItem="YJV-tN-8em" firstAttribute="top" secondItem="GpW-iU-7y7" secondAttribute="bottom" constant="45" id="PHh-bO-ZL7"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="baseline" secondItem="EEY-T6-j5I" secondAttribute="baseline" id="SRc-m3-NWY"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="leading" secondItem="EEY-T6-j5I" secondAttribute="trailing" constant="39" id="Uex-HF-YAe"/>
                             <constraint firstItem="Sz9-6Y-mMG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ui9-0A-JOp"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="top" secondItem="hMt-B8-Q6x" secondAttribute="bottom" constant="8" symbolic="YES" id="VnT-Km-x2U"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="baseline" secondItem="emc-fY-yal" secondAttribute="baseline" id="Xfi-8l-2vz"/>
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="top" secondItem="EEY-T6-j5I" secondAttribute="bottom" constant="8" symbolic="YES" id="Yp4-ph-2Ld"/>
-                            <constraint firstAttribute="trailing" secondItem="GpW-iU-7y7" secondAttribute="trailing" constant="51" id="bIH-WB-dMk"/>
                             <constraint firstItem="emc-fY-yal" firstAttribute="trailing" secondItem="g65-7H-PRm" secondAttribute="trailing" id="bcp-jR-TBF"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="leading" secondItem="g65-7H-PRm" secondAttribute="leading" id="emM-dH-Y52"/>
+                            <constraint firstAttribute="trailing" secondItem="GpW-iU-7y7" secondAttribute="trailing" constant="26" id="gG1-Z5-s8C"/>
                             <constraint firstItem="Sz9-6Y-mMG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h2C-06-xaP"/>
                             <constraint firstItem="g65-7H-PRm" firstAttribute="top" secondItem="GBN-X0-p71" secondAttribute="bottom" constant="13" id="htJ-4y-zJu"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="trailing" secondItem="GBN-X0-p71" secondAttribute="trailing" id="jC3-9s-eWz"/>
@@ -533,6 +528,7 @@
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="trailing" secondItem="emc-fY-yal" secondAttribute="trailing" id="ngs-s7-VrX"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="leading" secondItem="hMt-B8-Q6x" secondAttribute="leading" id="r4g-0u-YeU"/>
                             <constraint firstItem="ZCN-UP-7po" firstAttribute="top" secondItem="XUv-kh-xxe" secondAttribute="bottom" constant="7" id="rye-bd-Dbm"/>
+                            <constraint firstItem="YJV-tN-8em" firstAttribute="top" secondItem="GpW-iU-7y7" secondAttribute="bottom" constant="44" id="sa0-MQ-0hT"/>
                             <constraint firstItem="XUv-kh-xxe" firstAttribute="top" secondItem="oZs-mZ-9Se" secondAttribute="bottom" constant="4" id="tBZ-Ie-M9U"/>
                             <constraint firstItem="ZCN-UP-7po" firstAttribute="leading" secondItem="Sz9-6Y-mMG" secondAttribute="leading" id="yQP-uz-z6N"/>
                             <constraint firstAttribute="trailing" secondItem="XUv-kh-xxe" secondAttribute="trailing" constant="32" id="zpy-Ra-BBO"/>
@@ -545,6 +541,11 @@
                     <navigationItem key="navigationItem" id="cm5-C1-GGS"/>
                     <connections>
                         <outlet property="additionalInfoView" destination="g65-7H-PRm" id="4ee-DD-ot0"/>
+                        <outlet property="contactTypeField" destination="emc-fY-yal" id="Lev-QW-t80"/>
+                        <outlet property="emailField" destination="hMt-B8-Q6x" id="e4n-ce-kxW"/>
+                        <outlet property="firstNameField" destination="EEY-T6-j5I" id="493-D4-kgH"/>
+                        <outlet property="lastNameField" destination="eVL-Lj-NvE" id="tIz-ZE-qLc"/>
+                        <outlet property="phoneField" destination="GBN-X0-p71" id="1jN-Ef-RIq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -561,6 +562,7 @@
         <image name="CameraButton.png" width="144" height="144"/>
         <image name="CheckBoxUnchecked.png" width="72" height="72"/>
         <image name="InstructionsBar.png" width="1024" height="72"/>
+        <image name="SubmitButton.png" width="100" height="35"/>
         <image name="TitleBar.png" width="1024" height="82"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

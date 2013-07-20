@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Hispanic Scholarship Fund. All rights reserved.
 //
 
-
-
 #import <Foundation/Foundation.h>
 
 @class HSFContact;

@@ -28,7 +28,6 @@
 // iPad Only
 @property (nonatomic, strong) IBOutlet HSFAdditionalInfoComponentsView *additionalInfoView;
 
-
 @end
 
 @implementation HSFContactViewController

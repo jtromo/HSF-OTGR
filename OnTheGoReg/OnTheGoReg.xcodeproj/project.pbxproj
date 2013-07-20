@@ -46,6 +46,9 @@
 		08D2ED8B1799F12300A9DB3C /* InstructionsBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */; };
 		08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8C179A01F400A9DB3C /* CameraButton.png */; };
 		08D2ED8F179A041000A9DB3C /* TitleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8E179A041000A9DB3C /* TitleBar.png */; };
+		08D2ED92179A15D000A9DB3C /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED90179A15D000A9DB3C /* BackButton.png */; };
+		08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED91179A15D000A9DB3C /* NextButton.png */; };
+		08D2ED95179A15D500A9DB3C /* SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED94179A15D500A9DB3C /* SubmitButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBar.png; sourceTree = "<group>"; };
 		08D2ED8C179A01F400A9DB3C /* CameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraButton.png; sourceTree = "<group>"; };
 		08D2ED8E179A041000A9DB3C /* TitleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBar.png; sourceTree = "<group>"; };
+		08D2ED90179A15D000A9DB3C /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		08D2ED91179A15D000A9DB3C /* NextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton.png; sourceTree = "<group>"; };
+		08D2ED94179A15D500A9DB3C /* SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubmitButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +311,9 @@
 		08554B191799A93C009AFE5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				08D2ED94179A15D500A9DB3C /* SubmitButton.png */,
+				08D2ED90179A15D000A9DB3C /* BackButton.png */,
+				08D2ED91179A15D000A9DB3C /* NextButton.png */,
 				08D2ED8E179A041000A9DB3C /* TitleBar.png */,
 				08D2ED8C179A01F400A9DB3C /* CameraButton.png */,
 				086280061799C5800018E575 /* CheckBoxUnchecked.png */,
@@ -405,7 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D2ED92179A15D000A9DB3C /* BackButton.png in Resources */,
+				08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */,
 				08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */,
+				08D2ED95179A15D500A9DB3C /* SubmitButton.png in Resources */,
 				08554AB9179990D4009AFE5E /* Main_iPad.storyboard in Resources */,
 				08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */,
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
