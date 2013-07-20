@@ -462,27 +462,32 @@
 //
 //
 //
-//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-//{
-//    self.selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
-//    
-//    // Show process button
-//    if (self.selectedImage) {
-//        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Process"
-//                                                                      style:UIBarButtonItemStylePlain
-//                                                                     target:self
-//                                                                     action:@selector(processWasPressed:)];
-//        [self.navigationItem setRightBarButtonItem:barButton animated:YES];
-//        [self.selectedImageView setImage:self.selectedImage];
-//    }
-//    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    // Show process button
+    if (selectedImage) {
+        [_tesseract setImage:selectedImage];
+        [_tesseract recognize];
+        
+        NSString *businessCardText = [_tesseract recognizedText];
+        [self parseCard:businessCardText];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 //
-//- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-//{
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [_tesseract setImage:[UIImage imageNamed:@"Sample_Business_Card2.png"]];
+    [_tesseract recognize];
+    
+    NSString *businessCardText = [_tesseract recognizedText];
+    [self parseCard:businessCardText];
+}
 //
 //- (void)processWasPressed:(id)sender
 //{
@@ -536,26 +541,29 @@
 
 - (IBAction)cameraButtonPressed:(id)sender
 {
-    [_tesseract setImage:[UIImage imageNamed:@"Sample_Business_Card2.png"]];
-    [_tesseract recognize];
-    
-    NSString *businessCardText = [_tesseract recognizedText];
-    [self parseCard:businessCardText];
-//
-//    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
-//    imagePickerController.delegate = self;
-//    
-//    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
-//        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-//        imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
-//    }
-//    else {
-//        imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//    }
-//    
-//    [self presentViewController:imagePickerController
-//                       animated:YES
-//                     completion:nil];
+    if (IS_PHONE) {
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.delegate = self;
+        
+        if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
+            imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
+        }
+        else {
+            imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        }
+        
+        [self presentViewController:imagePickerController
+                           animated:YES
+                         completion:nil];
+    }
+    else {
+        [_tesseract setImage:[UIImage imageNamed:@"Sample_Business_Card2.png"]];
+        [_tesseract recognize];
+        
+        NSString *businessCardText = [_tesseract recognizedText];
+        [self parseCard:businessCardText];
+    }
 }
 
 
