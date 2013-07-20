@@ -232,8 +232,10 @@ static HSFDatabasController * _sharedInstance;
 }
 
 // Retrieves contacts from the DB
-- (void) pendingUploadsToCVS
+- (NSString *) pendingUploadsToCVS
 {
+    __block NSString *path = nil;
+    
     [_contactDBQueue inDatabase:^(FMDatabase *db) {
         
         LogTrace(@"Getting pendingUploads");
@@ -249,9 +251,10 @@ static HSFDatabasController * _sharedInstance;
         }
         LogTrace(@"pendingUploads successful");
         
-        [self extractContactsFromResultSetToCVS:rs];
-        
+        path = [self extractContactsFromResultSetToCVS:rs];
     }];
+    
+    return path;
 }
 
 - (NSArray *) pendingUploads
@@ -291,11 +294,11 @@ static HSFDatabasController * _sharedInstance;
 
 #pragma mark - Helpers and Wrappers
 
-- (void) extractContactsFromResultSetToCVS: (FMResultSet *) myResultSet
+- (NSString *) extractContactsFromResultSetToCVS: (FMResultSet *) myResultSet
 {
     if (!myResultSet) {
         LogError(@"FMResultSet is null");
-        return;
+        return nil;
     }
     BOOL success = NO;
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -309,7 +312,6 @@ static HSFDatabasController * _sharedInstance;
     CHCSVWriter *csvWriter = [[CHCSVWriter alloc] initForWritingToCSVFile:writablePath];
     
     while([myResultSet next]){
-        
         
         // Gather info from database result
         NSString * firstName = [myResultSet stringForColumn:kCacheColumn_firstName];
@@ -347,6 +349,8 @@ static HSFDatabasController * _sharedInstance;
         
     }
     [csvWriter closeStream];
+    
+    return writablePath;
 }
 
 // Converts result set to array of Asset Objects

@@ -13,7 +13,7 @@
 @interface HSFNetManager : NSObject
 
 + (HSFNetManager *) sharedInstance;
-- (void)submitCurrentContact;
+- (void)syncWithViewController: (UIViewController *)vc;
 @property (nonatomic, strong) HSFContact *currentContact;
 
 @end

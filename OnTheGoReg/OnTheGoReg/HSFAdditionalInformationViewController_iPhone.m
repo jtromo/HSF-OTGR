@@ -57,8 +57,7 @@
     
     LogInfo(@"Current: %@", contact);
     
-    [[HSFDatabasController sharedController] pendingUploads];
-    [[HSFDatabasController sharedController] pendingUploadsToCVS];
+    [[HSFNetManager sharedInstance] syncWithViewController:self];
 }
 
 @end

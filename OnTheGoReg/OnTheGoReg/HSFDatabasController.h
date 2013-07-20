@@ -15,6 +15,7 @@
 + (HSFDatabasController *) sharedController;
 - (BOOL) insertContact: (HSFContact *)myContact;
 - (NSArray *) pendingUploads;
-- (void) pendingUploadsToCVS;
+- (NSString *) pendingUploadsToCVS;
+- (BOOL) deleteAllContacts;
 
 @end

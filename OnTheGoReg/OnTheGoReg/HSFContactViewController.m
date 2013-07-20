@@ -411,9 +411,7 @@
         HSFContact *contact = [[HSFNetManager sharedInstance] currentContact];
         [[HSFDatabasController sharedController] insertContact:contact];
         
-        [[HSFDatabasController sharedController] pendingUploads];
-        [[HSFDatabasController sharedController] pendingUploadsToCVS];
-        
+        [[HSFNetManager sharedInstance] syncWithViewController:self];
     } else {
         // Error message
     }
