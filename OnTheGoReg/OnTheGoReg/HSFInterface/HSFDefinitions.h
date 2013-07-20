@@ -53,4 +53,6 @@
 #define kCacheColumn_modifiedDate @"modifiedDate"
 #define kCacheColumn_isDeleted @"isDeleted"
 
+#define kCSVFileName @"contacts.csv"
+
 #endif

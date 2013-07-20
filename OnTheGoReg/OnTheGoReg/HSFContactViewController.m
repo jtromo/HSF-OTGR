@@ -12,6 +12,7 @@
 #import "HSFContact.h"
 #import "HSFAdditionalInfoComponentsView.h"
 #import "HSFDatabasController.h"
+#import "Tesseract.h"
 
 @interface HSFContactViewController ()
 
@@ -28,6 +29,9 @@
 
 // iPad Only
 @property (nonatomic, strong) IBOutlet HSFAdditionalInfoComponentsView *additionalInfoView;
+
+@property (nonatomic, strong) Tesseract *tesseract;
+
 
 @end
 
@@ -81,7 +85,55 @@
 //    }
     
     [self registerForKeyboardNotifications];
+    
+    
+    
+    
+    
+    
+    [self createAndCopyTessdata];
+    
+    
+    
+    _tesseract = [[Tesseract alloc] initWithDataPath:@"tessdata" language:@"eng"];
+    
+    
+    [_tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]];
+    [_tesseract recognize];
+    
+    NSLog(@"%@", [_tesseract recognizedText]);
 }
+
+
+- (void)createAndCopyTessdata
+{
+    NSString *documentDirPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    // NSLog(@"%@", documentDirPath);
+    NSString *tessdataDirPath = [documentDirPath stringByAppendingPathComponent:@"tessdata"];
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    if([manager fileExistsAtPath:tessdataDirPath] == NO)
+        if([manager fileExistsAtPath:documentDirPath])
+            [manager createDirectoryAtPath:tessdataDirPath withIntermediateDirectories:NO attributes:nil error:nil];
+    
+//    NSArray *langArray = [[NSArray alloc] initWithObjects:@"pol", @"eng", nil];
+//    for(NSString *lang in langArray)
+//    {
+        NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"eng" ofType:@"traineddata"];
+        // NSLog(@"source: %@", sourcePath);
+        NSString *destPath = [tessdataDirPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.traineddata", @"eng"]];
+        // NSLog(@"dest: %@", destPath);
+        
+        if([manager fileExistsAtPath:destPath] == NO)
+            [manager copyItemAtPath:sourcePath toPath:destPath error:nil];
+//    }
+}
+
+//- (void)initTesseract
+//{
+//    _tesseract = [[Tesseract alloc] initWithDataPath:@"" language:@"pol"];
+//}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -238,8 +290,6 @@
     return NO;
 }
 
-
-
 #pragma mark - Keyboard Scrolling
 
 // Call this method somewhere in your view controller setup code.
@@ -295,13 +345,6 @@
     self.scrollView.scrollIndicatorInsets = contentInsets;
 }
 
-
-
-
-
-
-
-
 #pragma mark - UIPickerView delegate
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow: (NSInteger)row inComponent:(NSInteger)component
@@ -340,10 +383,6 @@
     return sectionWidth;
 }
 
-//- (BOOL)verifyAtLeastOneChecked
-//{
-//    
-//}
 
 // Also verifies
 - (BOOL)populateContact
@@ -352,35 +391,37 @@
     
     HSFContact *currentContact = [[HSFNetManager sharedInstance] currentContact];
     currentContact.firstName = _firstNameField.text;
-    if (!currentContact.firstName) {
+    if (![currentContact.firstName length]) {
         _firstNameField.backgroundColor = [UIColor redColor];
         isVerified = NO;
     } else {
         _firstNameField.backgroundColor = [UIColor whiteColor];
     }
     currentContact.lastName = _lastNameField.text;
-    if (!currentContact.lastName) {
+    if (![currentContact.lastName length]) {
         _lastNameField.backgroundColor = [UIColor redColor];
         isVerified = NO;
     } else {
         _lastNameField.backgroundColor = [UIColor whiteColor];
     }
     currentContact.email = _emailField.text;
-    if (!currentContact.email) {
+    if (![currentContact.email length]) {
         _emailField.backgroundColor = [UIColor redColor];
         isVerified = NO;
     } else {
+        
+        
         _emailField.backgroundColor = [UIColor whiteColor];
     }
     currentContact.contactType = _contactTypeField.text;
-    if (!currentContact.contactType) {
+    if (![currentContact.contactType length]) {
         _contactTypeField.backgroundColor = [UIColor redColor];
         isVerified = NO;
     } else {
         _contactTypeField.backgroundColor = [UIColor whiteColor];
     }
     currentContact.phoneNumber = _phoneField.text;
-    if (!currentContact.phoneNumber) {
+    if (![currentContact.phoneNumber length]) {
         _phoneField.backgroundColor = [UIColor redColor];
         isVerified = NO;
     } else {
@@ -417,9 +458,69 @@
     }
 }
 
-
-
-
+//
+//
+//
+//
+//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+//{
+//    self.selectedImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+//    
+//    // Show process button
+//    if (self.selectedImage) {
+//        UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Process"
+//                                                                      style:UIBarButtonItemStylePlain
+//                                                                     target:self
+//                                                                     action:@selector(processWasPressed:)];
+//        [self.navigationItem setRightBarButtonItem:barButton animated:YES];
+//        [self.selectedImageView setImage:self.selectedImage];
+//    }
+//    
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
+//
+//- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+//{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
+//
+//- (void)processWasPressed:(id)sender
+//{
+//    ResultsViewController *resultsVC = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"Results"];
+//    
+//    // Create loading view.
+//    resultsVC.loadingView = [[UIView alloc] initWithFrame:self.view.bounds];
+//    resultsVC.loadingView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+//    [resultsVC.view addSubview:resultsVC.loadingView];
+//    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] init];
+//    [resultsVC.loadingView addSubview:activityView];
+//    activityView.center = resultsVC.loadingView.center;
+//    [activityView startAnimating];
+//    
+//    resultsVC.selectedImage = self.selectedImage;
+//    [resultsVC.selectedImageView setImage:self.selectedImage];
+//    
+//    // Push
+//    [self.navigationController pushViewController:resultsVC animated:YES];
+//    
+//}
+- (IBAction)cameraButtonPressed:(id)sender
+{
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    
+    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        imagePickerController.cameraCaptureMode = UIImagePickerControllerCameraCaptureModePhoto;
+    }
+    else {
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    }
+    
+    [self presentViewController:imagePickerController
+                       animated:YES
+                     completion:nil];
+}
 
 
 

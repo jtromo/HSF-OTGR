@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <MessageUI/MFMailComposeViewController.h>
 @class HSFContact;
 
-@interface HSFNetManager : NSObject
+@interface HSFNetManager : NSObject <MFMailComposeViewControllerDelegate>
 
 + (HSFNetManager *) sharedInstance;
 - (void)syncWithViewController: (UIViewController *)vc;

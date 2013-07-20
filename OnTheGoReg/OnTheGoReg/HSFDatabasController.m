@@ -232,7 +232,7 @@ static HSFDatabasController * _sharedInstance;
 }
 
 // Retrieves contacts from the DB
-- (NSString *) pendingUploadsToCVS
+- (NSString *) pendingUploadsToCSV
 {
     __block NSString *path = nil;
     
@@ -251,7 +251,7 @@ static HSFDatabasController * _sharedInstance;
         }
         LogTrace(@"pendingUploads successful");
         
-        path = [self extractContactsFromResultSetToCVS:rs];
+        path = [self extractContactsFromResultSetToCSV:rs];
     }];
     
     return path;
@@ -294,7 +294,7 @@ static HSFDatabasController * _sharedInstance;
 
 #pragma mark - Helpers and Wrappers
 
-- (NSString *) extractContactsFromResultSetToCVS: (FMResultSet *) myResultSet
+- (NSString *) extractContactsFromResultSetToCSV: (FMResultSet *) myResultSet
 {
     if (!myResultSet) {
         LogError(@"FMResultSet is null");
@@ -304,7 +304,7 @@ static HSFDatabasController * _sharedInstance;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *writablePath = nil;
     
-    writablePath = [self writablePathForDocumentNamed: @"contacts.cvs"];
+    writablePath = [self writablePathForDocumentNamed: kCSVFileName];
     success = [fileManager fileExistsAtPath:writablePath];
     if (success) {
         
