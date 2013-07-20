@@ -475,16 +475,13 @@
                                     <outlet property="infoLabel9" destination="rYG-gW-6dh" id="WpP-hg-WcO"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sz9-6Y-mMG">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleBariPad.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sz9-6Y-mMG">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InstructionsBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZCN-UP-7po">
-                                <rect key="frame" x="0.0" y="61" width="1024" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InstructionsBariPad.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZCN-UP-7po">
+                                <rect key="frame" x="0.0" y="71" width="1024" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0hk-45-xvv"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUv-kh-xxe">
                                 <rect key="frame" x="942" y="4" width="50" height="50"/>
@@ -508,15 +505,16 @@
                         <constraints>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="leading" secondItem="emc-fY-yal" secondAttribute="leading" id="0Wy-e7-6Nj"/>
                             <constraint firstAttribute="bottom" secondItem="g65-7H-PRm" secondAttribute="bottom" constant="118" id="BEV-Yf-MJK"/>
+                            <constraint firstItem="ZCN-UP-7po" firstAttribute="top" secondItem="XUv-kh-xxe" secondAttribute="bottom" constant="17" id="BJo-1e-BZi"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="top" secondItem="Sz9-6Y-mMG" secondAttribute="bottom" constant="47" id="IVB-se-DE6"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="trailing" secondItem="hMt-B8-Q6x" secondAttribute="trailing" id="Izd-Qg-yU3"/>
-                            <constraint firstItem="EEY-T6-j5I" firstAttribute="top" secondItem="ZCN-UP-7po" secondAttribute="bottom" constant="8" symbolic="YES" id="KpQ-5R-YR4"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="baseline" secondItem="EEY-T6-j5I" secondAttribute="baseline" id="SRc-m3-NWY"/>
                             <constraint firstItem="eVL-Lj-NvE" firstAttribute="leading" secondItem="EEY-T6-j5I" secondAttribute="trailing" constant="39" id="Uex-HF-YAe"/>
                             <constraint firstItem="Sz9-6Y-mMG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ui9-0A-JOp"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="top" secondItem="hMt-B8-Q6x" secondAttribute="bottom" constant="8" symbolic="YES" id="VnT-Km-x2U"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="baseline" secondItem="emc-fY-yal" secondAttribute="baseline" id="Xfi-8l-2vz"/>
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="top" secondItem="EEY-T6-j5I" secondAttribute="bottom" constant="8" symbolic="YES" id="Yp4-ph-2Ld"/>
+                            <constraint firstItem="ZCN-UP-7po" firstAttribute="leading" secondItem="Sz9-6Y-mMG" secondAttribute="leading" id="Zq6-G9-5SV"/>
                             <constraint firstItem="emc-fY-yal" firstAttribute="trailing" secondItem="g65-7H-PRm" secondAttribute="trailing" id="bcp-jR-TBF"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="leading" secondItem="g65-7H-PRm" secondAttribute="leading" id="emM-dH-Y52"/>
                             <constraint firstAttribute="trailing" secondItem="GpW-iU-7y7" secondAttribute="trailing" constant="26" id="gG1-Z5-s8C"/>
@@ -526,11 +524,10 @@
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="leading" secondItem="GBN-X0-p71" secondAttribute="leading" id="lWG-Ys-t3t"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="90" id="mGX-sB-mvB"/>
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="trailing" secondItem="emc-fY-yal" secondAttribute="trailing" id="ngs-s7-VrX"/>
+                            <constraint firstItem="EEY-T6-j5I" firstAttribute="top" secondItem="ZCN-UP-7po" secondAttribute="bottom" constant="8" symbolic="YES" id="qe2-5o-q7I"/>
                             <constraint firstItem="EEY-T6-j5I" firstAttribute="leading" secondItem="hMt-B8-Q6x" secondAttribute="leading" id="r4g-0u-YeU"/>
-                            <constraint firstItem="ZCN-UP-7po" firstAttribute="top" secondItem="XUv-kh-xxe" secondAttribute="bottom" constant="7" id="rye-bd-Dbm"/>
                             <constraint firstItem="YJV-tN-8em" firstAttribute="top" secondItem="GpW-iU-7y7" secondAttribute="bottom" constant="44" id="sa0-MQ-0hT"/>
                             <constraint firstItem="XUv-kh-xxe" firstAttribute="top" secondItem="oZs-mZ-9Se" secondAttribute="bottom" constant="4" id="tBZ-Ie-M9U"/>
-                            <constraint firstItem="ZCN-UP-7po" firstAttribute="leading" secondItem="Sz9-6Y-mMG" secondAttribute="leading" id="yQP-uz-z6N"/>
                             <constraint firstAttribute="trailing" secondItem="XUv-kh-xxe" secondAttribute="trailing" constant="32" id="zpy-Ra-BBO"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -561,9 +558,9 @@
     <resources>
         <image name="CameraButton.png" width="144" height="144"/>
         <image name="CheckBoxUnchecked.png" width="72" height="72"/>
-        <image name="InstructionsBar.png" width="1024" height="72"/>
+        <image name="InstructionsBariPad.png" width="1024" height="40"/>
         <image name="SubmitButton.png" width="100" height="35"/>
-        <image name="TitleBar.png" width="1024" height="82"/>
+        <image name="TitleBariPad.png" width="1024" height="70"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

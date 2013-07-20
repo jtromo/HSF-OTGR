@@ -43,12 +43,14 @@
 		0862800D1799D1680018E575 /* UIViewController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0862800C1799D1680018E575 /* UIViewController+Extensions.m */; };
 		0862800F1799D84F0018E575 /* CheckBoxChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0862800E1799D84F0018E575 /* CheckBoxChecked.png */; };
 		086280121799DF840018E575 /* HSFAdditionalInfoComponentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 086280111799DF840018E575 /* HSFAdditionalInfoComponentsView.m */; };
-		08D2ED8B1799F12300A9DB3C /* InstructionsBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */; };
 		08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8C179A01F400A9DB3C /* CameraButton.png */; };
-		08D2ED8F179A041000A9DB3C /* TitleBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED8E179A041000A9DB3C /* TitleBar.png */; };
 		08D2ED92179A15D000A9DB3C /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED90179A15D000A9DB3C /* BackButton.png */; };
 		08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED91179A15D000A9DB3C /* NextButton.png */; };
 		08D2ED95179A15D500A9DB3C /* SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 08D2ED94179A15D500A9DB3C /* SubmitButton.png */; };
+		08E6318E179A1C2000174D4E /* InstructionsBariPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E6318D179A1C2000174D4E /* InstructionsBariPhone.png */; };
+		08E63190179A1C2E00174D4E /* InstructionsBariPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E6318F179A1C2E00174D4E /* InstructionsBariPad.png */; };
+		08E63193179A20F200174D4E /* TitleBariPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E63191179A20F200174D4E /* TitleBariPad.png */; };
+		08E63194179A20F200174D4E /* TitleBariPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E63192179A20F200174D4E /* TitleBariPhone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,12 +120,14 @@
 		0862800E1799D84F0018E575 /* CheckBoxChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxChecked.png; sourceTree = "<group>"; };
 		086280101799DF840018E575 /* HSFAdditionalInfoComponentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFAdditionalInfoComponentsView.h; sourceTree = "<group>"; };
 		086280111799DF840018E575 /* HSFAdditionalInfoComponentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFAdditionalInfoComponentsView.m; sourceTree = "<group>"; };
-		08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBar.png; sourceTree = "<group>"; };
 		08D2ED8C179A01F400A9DB3C /* CameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraButton.png; sourceTree = "<group>"; };
-		08D2ED8E179A041000A9DB3C /* TitleBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBar.png; sourceTree = "<group>"; };
 		08D2ED90179A15D000A9DB3C /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
 		08D2ED91179A15D000A9DB3C /* NextButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton.png; sourceTree = "<group>"; };
 		08D2ED94179A15D500A9DB3C /* SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubmitButton.png; sourceTree = "<group>"; };
+		08E6318D179A1C2000174D4E /* InstructionsBariPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBariPhone.png; sourceTree = "<group>"; };
+		08E6318F179A1C2E00174D4E /* InstructionsBariPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBariPad.png; sourceTree = "<group>"; };
+		08E63191179A20F200174D4E /* TitleBariPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBariPad.png; sourceTree = "<group>"; };
+		08E63192179A20F200174D4E /* TitleBariPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBariPhone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +213,8 @@
 				086280081799C7290018E575 /* HSFNetManager.h */,
 				086280091799C7290018E575 /* HSFNetManager.m */,
 				08627FFF1799BFC00018E575 /* Utilities */,
-				08554ABD179990D4009AFE5E /* Images.xcassets */,
 				08554AA9179990D4009AFE5E /* Supporting Files */,
+				08554ABD179990D4009AFE5E /* Images.xcassets */,
 			);
 			path = OnTheGoReg;
 			sourceTree = "<group>";
@@ -311,13 +315,15 @@
 		08554B191799A93C009AFE5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				08E63191179A20F200174D4E /* TitleBariPad.png */,
+				08E63192179A20F200174D4E /* TitleBariPhone.png */,
 				08D2ED94179A15D500A9DB3C /* SubmitButton.png */,
 				08D2ED90179A15D000A9DB3C /* BackButton.png */,
+				08E6318F179A1C2E00174D4E /* InstructionsBariPad.png */,
+				08E6318D179A1C2000174D4E /* InstructionsBariPhone.png */,
 				08D2ED91179A15D000A9DB3C /* NextButton.png */,
-				08D2ED8E179A041000A9DB3C /* TitleBar.png */,
 				08D2ED8C179A01F400A9DB3C /* CameraButton.png */,
 				086280061799C5800018E575 /* CheckBoxUnchecked.png */,
-				08D2ED8A1799F12300A9DB3C /* InstructionsBar.png */,
 				08554B1D1799AA1F009AFE5E /* BlueSample.jpg */,
 				08554B1E1799AA1F009AFE5E /* GreenSample.jpg */,
 				0862800E1799D84F0018E575 /* CheckBoxChecked.png */,
@@ -415,21 +421,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				08D2ED92179A15D000A9DB3C /* BackButton.png in Resources */,
+				08E63190179A1C2E00174D4E /* InstructionsBariPad.png in Resources */,
 				08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */,
 				08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */,
 				08D2ED95179A15D500A9DB3C /* SubmitButton.png in Resources */,
 				08554AB9179990D4009AFE5E /* Main_iPad.storyboard in Resources */,
 				08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */,
+				08E6318E179A1C2000174D4E /* InstructionsBariPhone.png in Resources */,
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
 				08554B1B1799A93C009AFE5E /* schema.sql in Resources */,
-				08D2ED8B1799F12300A9DB3C /* InstructionsBar.png in Resources */,
 				086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */,
 				08554B1C1799A93C009AFE5E /* BlackSample.png in Resources */,
 				08554B1F1799AA1F009AFE5E /* BlueSample.jpg in Resources */,
 				08554AB6179990D4009AFE5E /* Main_iPhone.storyboard in Resources */,
 				0862800F1799D84F0018E575 /* CheckBoxChecked.png in Resources */,
-				08D2ED8F179A041000A9DB3C /* TitleBar.png in Resources */,
+				08E63193179A20F200174D4E /* TitleBariPad.png in Resources */,
 				08554AAD179990D4009AFE5E /* InfoPlist.strings in Resources */,
+				08E63194179A20F200174D4E /* TitleBariPhone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

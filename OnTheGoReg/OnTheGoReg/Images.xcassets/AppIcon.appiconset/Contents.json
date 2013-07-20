@@ -6,6 +6,12 @@
       "scale" : "2x"
     },
     {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "HSFlogo.png",
+      "scale" : "1x"
+    },
+    {
       "idiom" : "iphone",
       "size" : "60x60",
       "scale" : "2x"
