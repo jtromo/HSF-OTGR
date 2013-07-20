@@ -22,7 +22,7 @@
 #define kLabel5 @"Internship Opportunities"
 #define kLabel6 @"Speaking Engagements"
 #define kLabel7 @"Becoming an Ambassador"
-#define kLabel8 @"Donationing to HSF"
+#define kLabel8 @"Donating to HSF"
 #define kLabel9 @"Becoming a Mentor"
 #define kLabel10 @"Becoming a Mentee"
 #define kLabel11 @"Other"
