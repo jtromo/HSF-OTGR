@@ -51,6 +51,19 @@
 		08E63190179A1C2E00174D4E /* InstructionsBariPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E6318F179A1C2E00174D4E /* InstructionsBariPad.png */; };
 		08E63193179A20F200174D4E /* TitleBariPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E63191179A20F200174D4E /* TitleBariPad.png */; };
 		08E63194179A20F200174D4E /* TitleBariPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 08E63192179A20F200174D4E /* TitleBariPhone.png */; };
+		08E63196179A419500174D4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E63195179A419500174D4E /* SystemConfiguration.framework */; };
+		08E63198179A419B00174D4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E63197179A419B00174D4E /* Security.framework */; };
+		08E6319A179A41A600174D4E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E63199179A41A600174D4E /* MobileCoreServices.framework */; };
+		08E6319C179A41AF00174D4E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E6319B179A41AF00174D4E /* MessageUI.framework */; };
+		08E6319E179A41BF00174D4E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E6319D179A41BF00174D4E /* CoreData.framework */; };
+		08E631A0179A420400174D4E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 08E6319F179A420400174D4E /* Settings.bundle */; };
+		08E631A2179A420900174D4E /* SalesforceSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 08E631A1179A420900174D4E /* SalesforceSDKResources.bundle */; };
+		08E631A4179A424800174D4E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E631A3179A424800174D4E /* libxml2.dylib */; };
+		08E631A6179A425A00174D4E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E631A5179A425A00174D4E /* libssl.a */; };
+		08E631AA179A45D000174D4E /* HSFDatabasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E631A9179A45D000174D4E /* HSFDatabasController.m */; };
+		08E631AD179A4AC600174D4E /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E631AC179A4AC600174D4E /* NSDate+Extensions.m */; };
+		08E631AF179A4F9000174D4E /* contactDB.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 08E631AE179A4F9000174D4E /* contactDB.sqlite3 */; };
+		08E631B4179A56CD00174D4E /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E631B3179A56CD00174D4E /* CHCSVParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +141,22 @@
 		08E6318F179A1C2E00174D4E /* InstructionsBariPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstructionsBariPad.png; sourceTree = "<group>"; };
 		08E63191179A20F200174D4E /* TitleBariPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBariPad.png; sourceTree = "<group>"; };
 		08E63192179A20F200174D4E /* TitleBariPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TitleBariPhone.png; sourceTree = "<group>"; };
+		08E63195179A419500174D4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		08E63197179A419B00174D4E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		08E63199179A41A600174D4E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		08E6319B179A41AF00174D4E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		08E6319D179A41BF00174D4E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08E6319F179A420400174D4E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		08E631A1179A420900174D4E /* SalesforceSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SalesforceSDKResources.bundle; sourceTree = "<group>"; };
+		08E631A3179A424800174D4E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		08E631A5179A425A00174D4E /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../Desktop/SalesforceMobileSDK-iOS/external/ThirdPartyDependencies/openssl/libssl.a"; sourceTree = "<group>"; };
+		08E631A8179A45D000174D4E /* HSFDatabasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFDatabasController.h; sourceTree = "<group>"; };
+		08E631A9179A45D000174D4E /* HSFDatabasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFDatabasController.m; sourceTree = "<group>"; };
+		08E631AB179A4AC600174D4E /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extensions.h"; path = "Utilities/NSDate+Extensions.h"; sourceTree = "<group>"; };
+		08E631AC179A4AC600174D4E /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extensions.m"; path = "Utilities/NSDate+Extensions.m"; sourceTree = "<group>"; };
+		08E631AE179A4F9000174D4E /* contactDB.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = contactDB.sqlite3; sourceTree = "<group>"; };
+		08E631B2179A56CD00174D4E /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		08E631B3179A56CD00174D4E /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +164,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E631A4179A424800174D4E /* libxml2.dylib in Frameworks */,
+				08E6319E179A41BF00174D4E /* CoreData.framework in Frameworks */,
+				08554AA5179990D4009AFE5E /* CoreGraphics.framework in Frameworks */,
+				08E6319C179A41AF00174D4E /* MessageUI.framework in Frameworks */,
+				08E6319A179A41A600174D4E /* MobileCoreServices.framework in Frameworks */,
+				08E63198179A419B00174D4E /* Security.framework in Frameworks */,
+				08E63196179A419500174D4E /* SystemConfiguration.framework in Frameworks */,
 				08554B1217999785009AFE5E /* libsqlite3.dylib in Frameworks */,
 				08554B101799977B009AFE5E /* libz.dylib in Frameworks */,
 				08554B141799979C009AFE5E /* QuartzCore.framework in Frameworks */,
-				08554AA5179990D4009AFE5E /* CoreGraphics.framework in Frameworks */,
 				08554AA7179990D4009AFE5E /* UIKit.framework in Frameworks */,
 				08554AA3179990D4009AFE5E /* Foundation.framework in Frameworks */,
+				08E631A6179A425A00174D4E /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +216,16 @@
 		08554AA1179990D4009AFE5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08E631B1179A56CD00174D4E /* CHCSVParser */,
+				08E631A5179A425A00174D4E /* libssl.a */,
+				08E631A3179A424800174D4E /* libxml2.dylib */,
+				08E631A1179A420900174D4E /* SalesforceSDKResources.bundle */,
+				08E6319F179A420400174D4E /* Settings.bundle */,
+				08E6319D179A41BF00174D4E /* CoreData.framework */,
+				08E6319B179A41AF00174D4E /* MessageUI.framework */,
+				08E63199179A41A600174D4E /* MobileCoreServices.framework */,
+				08E63197179A419B00174D4E /* Security.framework */,
+				08E63195179A419500174D4E /* SystemConfiguration.framework */,
 				08554B131799979C009AFE5E /* QuartzCore.framework */,
 				08554B1117999785009AFE5E /* libsqlite3.dylib */,
 				08554B0F1799977B009AFE5E /* libz.dylib */,
@@ -212,6 +258,7 @@
 				086280041799C2BD0018E575 /* HSFContact.m */,
 				086280081799C7290018E575 /* HSFNetManager.h */,
 				086280091799C7290018E575 /* HSFNetManager.m */,
+				08E631A7179A45B600174D4E /* Database */,
 				08627FFF1799BFC00018E575 /* Utilities */,
 				08554AA9179990D4009AFE5E /* Supporting Files */,
 				08554ABD179990D4009AFE5E /* Images.xcassets */,
@@ -308,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				08554B181799A93C009AFE5E /* schema.sql */,
+				08E631AE179A4F9000174D4E /* contactDB.sqlite3 */,
 			);
 			path = Databases;
 			sourceTree = "<group>";
@@ -339,8 +387,29 @@
 				0862800C1799D1680018E575 /* UIViewController+Extensions.m */,
 				086280001799BFEE0018E575 /* HSFCheckBox.h */,
 				086280011799BFEE0018E575 /* HSFCheckBox.m */,
+				08E631AB179A4AC600174D4E /* NSDate+Extensions.h */,
+				08E631AC179A4AC600174D4E /* NSDate+Extensions.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		08E631A7179A45B600174D4E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				08E631A8179A45D000174D4E /* HSFDatabasController.h */,
+				08E631A9179A45D000174D4E /* HSFDatabasController.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		08E631B1179A56CD00174D4E /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				08E631B2179A56CD00174D4E /* CHCSVParser.h */,
+				08E631B3179A56CD00174D4E /* CHCSVParser.m */,
+			);
+			name = CHCSVParser;
+			path = OnTheGoReg/Utilities/CHCSVParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08D2ED92179A15D000A9DB3C /* BackButton.png in Resources */,
+				08E631A0179A420400174D4E /* Settings.bundle in Resources */,
 				08E63190179A1C2E00174D4E /* InstructionsBariPad.png in Resources */,
 				08D2ED93179A15D000A9DB3C /* NextButton.png in Resources */,
 				08D2ED8D179A01F400A9DB3C /* CameraButton.png in Resources */,
@@ -428,6 +498,8 @@
 				08554AB9179990D4009AFE5E /* Main_iPad.storyboard in Resources */,
 				08554B201799AA1F009AFE5E /* GreenSample.jpg in Resources */,
 				08E6318E179A1C2000174D4E /* InstructionsBariPhone.png in Resources */,
+				08E631A2179A420900174D4E /* SalesforceSDKResources.bundle in Resources */,
+				08E631AF179A4F9000174D4E /* contactDB.sqlite3 in Resources */,
 				08554ABE179990D4009AFE5E /* Images.xcassets in Resources */,
 				08554B1B1799A93C009AFE5E /* schema.sql in Resources */,
 				086280071799C5800018E575 /* CheckBoxUnchecked.png in Resources */,
@@ -462,9 +534,12 @@
 				08627FFE1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.m in Sources */,
 				086280021799BFEE0018E575 /* HSFCheckBox.m in Sources */,
 				08554AFF17999598009AFE5E /* FMDatabaseQueue.m in Sources */,
+				08E631AA179A45D000174D4E /* HSFDatabasController.m in Sources */,
 				08554ABC179990D4009AFE5E /* HSFContactViewController.m in Sources */,
+				08E631B4179A56CD00174D4E /* CHCSVParser.m in Sources */,
 				08554AFC17999598009AFE5E /* FMDatabase.m in Sources */,
 				086280051799C2BD0018E575 /* HSFContact.m in Sources */,
+				08E631AD179A4AC600174D4E /* NSDate+Extensions.m in Sources */,
 				08554B0017999598009AFE5E /* FMResultSet.m in Sources */,
 				0862800D1799D1680018E575 /* UIViewController+Extensions.m in Sources */,
 				0862800A1799C7290018E575 /* HSFNetManager.m in Sources */,
@@ -606,6 +681,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnTheGoReg/OnTheGoReg-Prefix.pch";
 				INFOPLIST_FILE = "OnTheGoReg/OnTheGoReg-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Desktop/SalesforceMobileSDK-iOS/external/ThirdPartyDependencies/openssl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -619,6 +698,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnTheGoReg/OnTheGoReg-Prefix.pch";
 				INFOPLIST_FILE = "OnTheGoReg/OnTheGoReg-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../Desktop/SalesforceMobileSDK-iOS/external/ThirdPartyDependencies/openssl",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

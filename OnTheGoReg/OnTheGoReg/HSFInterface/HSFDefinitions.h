@@ -29,4 +29,28 @@
 
 #define kAddtionalInfoDict @{kLabel1: @NO, kLabel2 : @NO, kLabel3 : @NO, kLabel4 : @NO, kLabel5 : @NO, kLabel6 : @NO, kLabel7 : @NO, kLabel8 : @NO, kLabel9 : @NO, kLabel10 : @NO, kLabel11 : @NO };
 
+
+#define kContactTypes @[@"Student", @"Parent", @"Educator", @"Other"]
+
+// Column Rows
+#define kCacheColumn_firstName @"firstName"
+#define kCacheColumn_lastName @"lastName"
+#define kCacheColumn_emailAddress @"emailAddress"
+#define kCacheColumn_cellPhoneNumber @"cellPhoneNumber"
+#define kCacheColumn_contactType @"contactType"
+#define kCacheColumn_isApplication @"isApplication"
+#define kCacheColumn_isNewsletters @"isNewsletters"
+#define kCacheColumn_isResources @"isResources"
+#define kCacheColumn_isVolunteering @"isVolunteering"
+#define kCacheColumn_isInternships @"isInternships"
+#define kCacheColumn_isSpeaking @"isSpeaking"
+#define kCacheColumn_isAmbassador @"isAmbassador"
+#define kCacheColumn_isDonating @"isDonating"
+#define kCacheColumn_isMentoring @"isMentoring"
+#define kCacheColumn_isBeingMentored @"isBeingMentored"
+#define kCacheColumn_other @"other"
+#define kCacheColumn_creationDate @"creationDate"
+#define kCacheColumn_modifiedDate @"modifiedDate"
+#define kCacheColumn_isDeleted @"isDeleted"
+
 #endif

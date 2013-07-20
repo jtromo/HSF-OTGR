@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class FMResultSet;
 
 @interface HSFContact : NSObject
+
+- (id) initWithFMResultSet: (FMResultSet *)myResultSet;
 
 @property (nonatomic, strong) NSString *firstName;
 @property (nonatomic, strong) NSString *lastName;

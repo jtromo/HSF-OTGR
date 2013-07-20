@@ -9,6 +9,7 @@
 #import "HSFAdditionalInformationViewController_iPhone.h"
 #import "HSFContact.h"
 #import "HSFNetManager.h"
+#import "HSFDatabasController.h"
 #import "HSFCheckBox.h"
 #import "HSFAdditionalInfoComponentsView.h"
 
@@ -52,7 +53,12 @@
     [_additionalInfoView populateWithCheckboxes];
     
     HSFContact *contact = [[HSFNetManager sharedInstance] currentContact];
+    [[HSFDatabasController sharedController] insertContact:contact];
+    
     LogInfo(@"Current: %@", contact);
+    
+    [[HSFDatabasController sharedController] pendingUploads];
+    [[HSFDatabasController sharedController] pendingUploadsToCVS];
 }
 
 @end

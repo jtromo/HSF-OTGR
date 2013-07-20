@@ -11,6 +11,7 @@
 #import "HSFNetManager.h"
 #import "HSFContact.h"
 #import "HSFAdditionalInfoComponentsView.h"
+#import "HSFDatabasController.h"
 
 @interface HSFContactViewController ()
 
@@ -37,7 +38,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _contactTypes = @[@"Student", @"Parent", @"Educator", @"Other"];
+    _contactTypes = kContactTypes;
     
     UIPickerView *contactTypePicker = [[UIPickerView alloc] init];
     contactTypePicker.delegate = self;
@@ -391,7 +392,6 @@
         isVerified = [self.additionalInfoView populateWithCheckboxes];
     }
     
-    
     return isVerified;
 }
 
@@ -408,6 +408,12 @@
 {
     if ([self populateContact]) {
 //        [self performSegueWithIdentifier:@"Next" sender:self];
+        HSFContact *contact = [[HSFNetManager sharedInstance] currentContact];
+        [[HSFDatabasController sharedController] insertContact:contact];
+        
+        [[HSFDatabasController sharedController] pendingUploads];
+        [[HSFDatabasController sharedController] pendingUploadsToCVS];
+        
     } else {
         // Error message
     }

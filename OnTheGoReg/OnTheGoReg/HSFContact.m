@@ -7,6 +7,7 @@
 //
 
 #import "HSFContact.h"
+#import "FMResultSet.h"
 
 @implementation HSFContact
 
@@ -23,6 +24,30 @@
         [self commonInit];
     }
     return self;
+}
+
+- (id) initWithFMResultSet: (FMResultSet *)myResultSet
+{
+    if (!(self = [super init])) {
+        return nil;
+    }
+    
+    // Gather info from database result
+    NSString * firstName = [myResultSet stringForColumn:kCacheColumn_firstName];
+    _firstName = firstName;
+    NSString * lastName = [myResultSet stringForColumn:kCacheColumn_lastName];
+    _lastName = lastName;
+    NSString * emailAddress = [myResultSet stringForColumn:kCacheColumn_emailAddress];
+    _email = emailAddress;
+    NSString * cellPhoneNumber = [myResultSet stringForColumn:kCacheColumn_cellPhoneNumber];
+    _phoneNumber = cellPhoneNumber;
+    NSString * contactType = [myResultSet stringForColumn:kCacheColumn_contactType];
+    _contactType = contactType;
+   
+    
+#warning JR: stubbed on additional info
+    return self;
+    
 }
 
 @end
