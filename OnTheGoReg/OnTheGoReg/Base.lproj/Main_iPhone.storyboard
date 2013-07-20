@@ -126,7 +126,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-TQ-VKC">
-                                <rect key="frame" x="265" y="3" width="35" height="35"/>
+                                <rect key="frame" x="276" y="2" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="TOj-ws-xxR"/>
@@ -147,9 +147,9 @@
                             <constraint firstItem="P4j-So-QG9" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailing" id="5Yd-4x-iih"/>
                             <constraint firstItem="P4j-So-QG9" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottom" id="HOp-sP-gZF"/>
                             <constraint firstItem="P4j-So-QG9" firstAttribute="top" secondItem="Ic5-zn-U0x" secondAttribute="bottom" constant="2" id="Jmx-Cf-xT9"/>
-                            <constraint firstItem="Ic5-zn-U0x" firstAttribute="top" secondItem="qxc-TQ-VKC" secondAttribute="bottom" constant="2" id="Nhv-PJ-gAV"/>
+                            <constraint firstItem="Ic5-zn-U0x" firstAttribute="top" secondItem="qxc-TQ-VKC" secondAttribute="bottom" constant="3" id="Nhv-PJ-gAV"/>
                             <constraint firstItem="25v-pT-9wX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="USN-d7-swN"/>
-                            <constraint firstAttribute="trailing" secondItem="qxc-TQ-VKC" secondAttribute="trailing" constant="20" symbolic="YES" id="XFj-NQ-XaD"/>
+                            <constraint firstAttribute="trailing" secondItem="qxc-TQ-VKC" secondAttribute="trailing" constant="9" id="XFj-NQ-XaD"/>
                             <constraint firstItem="Ic5-zn-U0x" firstAttribute="trailing" secondItem="P4j-So-QG9" secondAttribute="trailing" id="aml-gk-OWt"/>
                             <constraint firstItem="Ic5-zn-U0x" firstAttribute="leading" secondItem="25v-pT-9wX" secondAttribute="leading" id="nEI-hI-53P"/>
                             <constraint firstItem="P4j-So-QG9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tWv-QM-J1K"/>

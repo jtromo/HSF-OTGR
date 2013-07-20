@@ -484,10 +484,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUv-kh-xxe">
-                                <rect key="frame" x="942" y="4" width="50" height="50"/>
+                                <rect key="frame" x="946" y="1" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="yfB-GP-BKF"/>
+                                    <constraint firstAttribute="width" constant="65" id="yfB-GP-BKF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="CameraButton.png">
@@ -510,11 +510,11 @@
                             <constraint firstItem="GBN-X0-p71" firstAttribute="trailing" secondItem="EEY-T6-j5I" secondAttribute="trailing" id="CQr-Df-Gy2"/>
                             <constraint firstItem="g65-7H-PRm" firstAttribute="top" secondItem="GBN-X0-p71" secondAttribute="bottom" constant="13" id="Gi6-a3-6bL"/>
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="trailing" secondItem="emc-fY-yal" secondAttribute="trailing" id="Ulp-a3-gCK"/>
-                            <constraint firstItem="XUv-kh-xxe" firstAttribute="top" secondItem="oZs-mZ-9Se" secondAttribute="bottom" constant="4" id="VER-qU-G8i"/>
-                            <constraint firstItem="ZCN-UP-7po" firstAttribute="top" secondItem="XUv-kh-xxe" secondAttribute="bottom" constant="17" id="YbR-GG-b59"/>
+                            <constraint firstItem="XUv-kh-xxe" firstAttribute="top" secondItem="oZs-mZ-9Se" secondAttribute="bottom" constant="1" id="VER-qU-G8i"/>
+                            <constraint firstItem="ZCN-UP-7po" firstAttribute="top" secondItem="XUv-kh-xxe" secondAttribute="bottom" constant="5" id="YbR-GG-b59"/>
                             <constraint firstItem="YJV-tN-8em" firstAttribute="top" secondItem="GpW-iU-7y7" secondAttribute="bottom" constant="44" id="ZaS-nZ-InQ"/>
                             <constraint firstItem="Sz9-6Y-mMG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aeo-G3-ljB"/>
-                            <constraint firstAttribute="trailing" secondItem="XUv-kh-xxe" secondAttribute="trailing" constant="32" id="cRP-nO-d6h"/>
+                            <constraint firstAttribute="trailing" secondItem="XUv-kh-xxe" secondAttribute="trailing" constant="13" id="cRP-nO-d6h"/>
                             <constraint firstItem="hMt-B8-Q6x" firstAttribute="leading" secondItem="GBN-X0-p71" secondAttribute="leading" id="ehr-NI-066"/>
                             <constraint firstItem="GBN-X0-p71" firstAttribute="top" secondItem="hMt-B8-Q6x" secondAttribute="bottom" constant="8" symbolic="YES" id="h5Y-nb-keP"/>
                             <constraint firstAttribute="trailing" secondItem="GpW-iU-7y7" secondAttribute="trailing" constant="26" id="iIm-sF-i8B"/>
