@@ -50,7 +50,9 @@
 
 - (IBAction)submitBtnPressed:(id)sender
 {
-    [_additionalInfoView populateWithCheckboxes];
+    if (![_additionalInfoView populateWithCheckboxes]) {
+        return;
+    }
     
     HSFContact *contact = [[HSFNetManager sharedInstance] currentContact];
     [[HSFDatabasController sharedController] insertContact:contact];
