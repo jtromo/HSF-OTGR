@@ -65,7 +65,7 @@ static HSFNetManager * _sharedInstance;
     [picker setSubject:@"New Contacts"];
     
     // Set up recipients
-     NSArray *toRecipients = [NSArray arrayWithObject:@"thomas.holland.john@gmail.com"];
+     NSArray *toRecipients = [NSArray arrayWithObject:@"mbailey@hsf.net"];
     // NSArray *ccRecipients = [NSArray arrayWithObjects:@"second@example.com", @"third@example.com", nil];
     // NSArray *bccRecipients = [NSArray arrayWithObject:@"fourth@example.com"];
     
