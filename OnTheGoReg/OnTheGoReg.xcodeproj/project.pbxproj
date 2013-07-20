@@ -197,11 +197,11 @@
 		08554AA8179990D4009AFE5E /* OnTheGoReg */ = {
 			isa = PBXGroup;
 			children = (
+				08554AB7179990D4009AFE5E /* Main_iPad.storyboard */,
+				08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */,
 				08554B0817999654009AFE5E /* HSFInterface */,
 				08554AB1179990D4009AFE5E /* HSFAppDelegate.h */,
 				08554AB2179990D4009AFE5E /* HSFAppDelegate.m */,
-				08554AB7179990D4009AFE5E /* Main_iPad.storyboard */,
-				08554AB4179990D4009AFE5E /* Main_iPhone.storyboard */,
 				08554ABA179990D4009AFE5E /* HSFContactViewController.h */,
 				08554ABB179990D4009AFE5E /* HSFContactViewController.m */,
 				08627FFC1799BF870018E575 /* HSFAdditionalInformationViewController_iPhone.h */,
