@@ -1,7 +1,9 @@
 HSF-OTGR
 ========
 
-On The Go Registration for the 2013 Google Scholars' Retreat 24 Hr. Hackathon
+On The Go Registration for the 2013 Google Scholars' Retreat 24 Hours of Good Hackathon 
+
+http://googleforstudents.blogspot.com/2013/06/congratulations-to-this-years-google.html
 
 ## Screenshots
 
